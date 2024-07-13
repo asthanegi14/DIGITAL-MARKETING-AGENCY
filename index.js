@@ -22,17 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     img3.addEventListener('mouseover', handleImageHover(2, hiddenDiv3));
 });
 
-function changeImage(imageSrc, element) {
-    document.getElementById('projectImage').src = imageSrc;
-
-    var projectItems = document.querySelectorAll('.projects .t1');
-    projectItems.forEach(function(item) {
-        item.classList.remove('active');
-    });
-
-    element.classList.add('active');
-}
-
 function showPopUp() {
     var popup = document.getElementById("popup");
     if (popup.style.display === "flex") {
@@ -41,3 +30,26 @@ function showPopUp() {
         popup.style.display = "flex";
     }
 }
+
+$(document).ready(function() {
+    $(".button, .cross").click(function() {
+        $("#popup").toggle();
+    });
+
+    $(".image-container").hover(
+        function() {
+            $(this).find(".hiddenDiv").fadeIn(500);
+        },
+        function() {
+            $(this).find(".hiddenDiv").fadeOut(500);
+        }
+    );
+
+    $(".t1").click(function() {
+        let imgSrc = $(this).data("img-src");
+        $("#projectImage").attr("src", imgSrc);
+        $(".t1").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
