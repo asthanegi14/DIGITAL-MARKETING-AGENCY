@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="index.css">
+    <title>DIGITAL MARKETING AGENCY</title>
+</head>
+
+<body>
+
+    <!-- homepage -->
+    <div class="homepage">
+        <div class="left">
+            <h2 class="sub-heading">Award Winning</h2>
+            <h1 class="heading">Digital Marketing Agency</h1>
+            <p class="text">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
+                fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+
+            <button class="button"
+                    onclick="showPopUp()">Contact Us</button>
+        </div>
+        <div class="right">
+            <img src="./images/hero.png"
+                 alt="heroImg">
+        </div>
+
+        <!-- popup form -->
+
+        <div class="popup"
+             id="popup">
+            <form action="https://getform.io/f/alljlnna"
+                  method="POST"
+                  class="formData">
+
+                <p class="cross"
+                   onclick="showPopUp()">&#x2716;</p>
+                <h2 class="heading">Talk to us</h2>
+                <input type="email"
+                       placeholder="Work email*"
+                       id="email"
+                       name="email">
+                <div class="names">
+                    <input type="text"
+                           name="firstName"
+                           id="firstName"
+                           placeholder="First name*">
+                    <input type="text"
+                           name="lastName"
+                           id="lastName"
+                           placeholder="Last name*">
+                </div>
+
+                <div class="chkbox">
+
+                    <input type="checkbox"
+                           name="subscribe"
+                           value="yes"
+                           checked
+                           id="check">
+                    <input type="hidden"
+                           name="subscribe"
+                           value="no"
+                           id="check">
+                    <p>I agree to Fyle's terms and conditions, and provide consent to send me communication.</p>
+                </div>
+
+                <button type="submit">Contact Us</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="services">
+        <h2 class="sub-heading">What we do</h2>
+
+        <div class="text-Heading">
+            <h1 class="heading">Services provide for you</h1>
+            <p class="text">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
+                fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+        </div>
+
+        <div class="images">
+            <div class="image-container active">
+                <img id="img1"
+                     src="images/1.png"
+                     alt="1img">
+                <div id="hiddenDiv1"
+                     class="hiddenDiv">
+                    <div class="innerDiv">
+                        <img src="images/icon.png"
+                             alt="icon">
+                        <h2>Web Development</h2>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://www.fylehq.com/"
+                           target="_blank"
+                           class="btnArrow">Read More <img src="images/arrow.png"
+                                 alt="arrow"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img id="img2"
+                     src="images/2.png"
+                     alt="1img">
+                <div id="hiddenDiv2"
+                     class="hiddenDiv">
+                    <div class="innerDiv">
+                        <img src="images/icon.png"
+                             alt="icon">
+                        <h2>Web Development</h2>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://www.fylehq.com/"
+                           target="_blank"
+                           class="btnArrow">Read More <img src="images/arrow.png"
+                                 alt="arrow"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img id="img3"
+                     src="images/3.png"
+                     alt="1img">
+                <div id="hiddenDiv3"
+                     class="hiddenDiv">
+                    <div class="innerDiv">
+                        <img src="images/icon.png"
+                             alt="icon">
+                        <h2>Web Development</h2>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                        <a href="https://www.fylehq.com/"
+                           target="_blank"
+                           class="btnArrow">Read More <img src="images/arrow.png"
+                                 alt="arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots">
+            <span class="dot"
+                  data-index="0"></span>
+            <span class="dot"
+                  data-index="1"></span>
+            <span class="dot"
+                  data-index="2"></span>
+        </div>
+    </div>
+
+    <div class="best">
+        <h2 class="sub-heading">Why choose us</h2>
+        <h1 class="heading">Why we are best</h1>
+        <div class="filters">
+            <div class="f1">
+                <img src="images/1.svg"
+                     alt="f1">
+                <h2 class="sub2-heading">Clarified Vision & Target</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, placeat tenetur?</p>
+            </div>
+            <div class="f1">
+                <img src="images/2.svg"
+                     alt="f1">
+                <h2 class="sub2-heading">High Performance</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, placeat tenetur?</p>
+            </div>
+            <div class="f1">
+                <img src="images/3.svg"
+                     alt="f1">
+                <h2 class="sub2-heading">Maintain Security</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, placeat tenetur?</p>
+            </div>
+            <div class="f1">
+                <img src="images/4.svg"
+                     alt="f1">
+                <h2 class="sub2-heading">Better Strategy & Quality</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, placeat tenetur?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <h2 class="sub-heading">Our Project</h2>
+        <h1 class="heading">Why we are best</h1>
+        <div class="imgTxt">
+            <img id="projectImage"
+                 src="images/image.png"
+                 alt="projectImage">
+            <div class="text">
+                <div class="t1 active"
+                     onclick="changeImage('images/image.png', this)">
+                    <h2 class="sub2-heading">Genderless Kei – Japan’s Hot</h2>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                </div>
+                <div class="t1"
+                     onclick="changeImage('images/image2.jpg', this)">
+                    <h2 class="sub2-heading">Better Strategy & Quality</h2>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                </div>
+                <div class="t1"
+                     onclick="changeImage('images/image3.jpg', this)">
+                    <h2 class="sub2-heading">Genderless Kei – Japan’s Hot</h2>
+                    <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="growth">
+        <h2 class="sub-heading">Experts growth</h2>
+        <h1 class="heading">Our company growth</h1>
+
+        <div class="content">
+            <div class="d1">
+                <img src="images/heart.svg"
+                     alt="heart">
+                <h1>199+</h1>
+                <p>Staticfied Customers</p>
+            </div>
+            <div class="d1">
+                <img src="images/clock.svg"
+                     alt="clock">
+                <h1>1591+</h1>
+                <p>Days Of Operation</p>
+            </div>
+            <div class="d1">
+                <img src="images/Path.svg"
+                     alt="Path">
+                <h1>283+</h1>
+                <p>Complete Project</p>
+            </div>
+            <div class="d1">
+                <img src="images/Path2.svg"
+                     alt="Path2">
+                <h1>75+</h1>
+                <p>Win Awards</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2 class="sub-heading">Client's Feedback</h2>
+        <h1 class="heading">People say's about us!</h1>
+        <p>Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+            Sections Bonorum et Malorum original.</p>
+        <p class="cSpan"><span>Jannat Tumpa</span>- COO, AMERIMAR ENTERPRISES, INC.</p>
+    </div>
+
+    <div class="footer">
+        <img src="images/Group.png"
+             alt="">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
